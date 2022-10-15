@@ -1,0 +1,24 @@
+.about-area{
+    padding: 190px 0;
+    @media (max-width: 991.98px){
+        padding: 80px 0;
+    }
+}
+.about-text {
+    p {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 38px;
+        letter-spacing: -0.05em;
+
+        color: #2E2E2E;
+        @media (max-width: 575.98px){
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+.about-img{
+    text-align: center;
+}

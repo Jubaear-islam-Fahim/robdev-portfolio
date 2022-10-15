@@ -1,0 +1,75 @@
+.footer-content {
+    padding-top: 200px;
+    @media (max-width: 991.98px){
+        padding-top: 80px;
+    }
+    .h3 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.05em;
+        color: #2E2E2E;
+    }
+
+    .btn {
+        background: #0B589F;
+        border-radius: 7.78894px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+        color: #FFFFFF;
+        margin: 30px 0 25px;
+        padding: 10px 20px
+    }
+
+    .download {
+        font-family: 'Inter'; 
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px; 
+
+        letter-spacing: -0.05em;
+        text-decoration-line: underline;
+
+        color: #2E2E2E;
+    }
+}
+
+.copyright {
+    padding: 130px 0;
+    @media (max-width: 991.98px){
+        padding: 80px 0;
+    }
+
+    ul {
+        display: flex;
+        gap: 10px;
+
+        li {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            color: #2E2E2E;
+
+            a {
+                color: #2E2E2E;
+            }
+
+        }
+    }
+
+    p {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.05em;
+        color: #2E2E2E;
+    }
+}

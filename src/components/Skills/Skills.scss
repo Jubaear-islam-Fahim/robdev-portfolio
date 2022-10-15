@@ -1,0 +1,36 @@
+.skills-content {
+    .h4 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.05em;
+
+        color: #2E2E2E;
+
+    }
+
+    p {
+        font-family: 'Inter';
+        font-size: 20px;
+        line-height: 38px;
+        margin-top: 30px;
+        letter-spacing: -0.05em;
+        @media (max-width: 767.98px){
+            margin-top: 20px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        color: #2E2E2E;
+
+        b {
+            font-weight: 700;
+            display: block;
+        }
+
+    }
+}
+

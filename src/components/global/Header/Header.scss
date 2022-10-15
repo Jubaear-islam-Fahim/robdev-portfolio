@@ -1,0 +1,148 @@
+// 
+// NavBar
+
+.navBarTop {
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    z-index: 111;
+    transition: all .3s linear;
+
+    ul.navbar-nav {
+        flex-direction: inherit;
+        gap: 30px;
+        margin-left: auto;
+        justify-content: end;
+        align-items: center;
+
+        .active,
+        a {
+            font-family: 'Inter'; 
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: -0.05em; 
+            color: #2E2E2E;
+
+        }
+        .active{
+            text-decoration-line: underline;
+        }
+
+        .nav-btn {
+            background: white;
+            color: #8C3A28;
+            padding: 10px 20px;
+            margin-left: 50px;
+            transition: all .3s linear;
+
+            &:hover {
+                color: white;
+                background-color: #131313;
+
+            }
+        }
+    }
+}
+
+.nav-content {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-items: center;
+    width: 100%; 
+
+}
+
+.navScroll {
+    background-color: #0B589F;
+    padding: 10px 0;
+    ul.navbar-nav{
+        .active,
+        a{
+            color: white;
+        }
+    }
+}
+
+.navClose {
+    a {
+        svg {
+            color: white !important;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nav-offcanvas {
+        position: fixed;
+        left: -100%;
+        width: 300px !important;
+        top: 0;
+        height: 100vh;
+        background: #0B589F;
+        border-right: 2px solid #FFFFFF;
+        transition: all .3s;
+
+    }
+
+    .nav-offcanvas.active {
+        left: 0;
+    }
+
+    .navBarTop ul.navbar-nav {
+        display: grid;
+        gap: 13px !important;
+        text-align: left;
+        float: left;
+        padding: 20px;
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    .navClose {
+        position: absolute;
+        right: 12px;
+        top: 7px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-toggler {
+        font-size: 33px; 
+    }
+    .navScroll{
+        
+        .navbar-toggler {
+            font-size: 33px;
+            svg{
+                color: white;
+            }
+        }
+    }
+
+    .navBarTop {
+        ul.navbar-nav {
+            .active,
+            a {
+                color: white;
+            }
+            .nav-btn {
+                margin: 21px 0 0;
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .nav-content {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .navbar-brand {
+        img {
+            height: 45px;
+        }
+    }
+}
